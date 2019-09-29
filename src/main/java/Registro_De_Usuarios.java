@@ -7,6 +7,7 @@ public class Registro_De_Usuarios {
     static Scanner teclado=new Scanner(System.in);
 
     public static void main (String[]args){
+        //
         crearRegistroUsuarios();
         menu();
         cerrarArchivo();
@@ -78,10 +79,9 @@ public class Registro_De_Usuarios {
         String direcCompleta=calle+","+Integer.toString(nroCasa)+","+comuna+","+region;
         return direcCompleta;
     }
-    //debe llamarse usuarios.cvs pero cambialo dsps
     public static void crearRegistroUsuarios(){
         try {
-            writer = new FileWriter("test2.csv");
+            writer = new FileWriter("usuarios.csv");
             writer.append("nombre,rut,direccion\n");
         } catch (IOException e) {
             e.printStackTrace();
