@@ -171,6 +171,7 @@ public class Registro_De_Usuarios {
         }
         return flag;}
     public static boolean validarRegion(String region){
+        region=region.toUpperCase();
         if (region.equals("I")||region.equals("II")||region.equals("III")||region.equals("IV")||region.equals("V")||region.equals("VI")||region.equals("VII")||region.equals("VII")||region.equals("IX")||region.equals("X")||region.equals("XI")||region.equals("XII")||region.equals("RM")||region.equals("XIV")||region.equals("XV")||region.equals("XVI")){
             return true;
         }
